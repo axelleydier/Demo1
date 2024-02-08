@@ -1,0 +1,13 @@
+pipeline{
+    agent { any }
+    environment {
+        NAME = "Axel"
+    }
+    stages{
+        stage("Coucou"){
+            steps{
+                sh "Coucou ${env.NAME}"
+            }
+        }
+    }
+}
