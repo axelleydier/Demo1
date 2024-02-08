@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage("Coucou"){
             steps{
-                sh "Coucou ${env.NAME}"
+                echo "Coucou ${env.NAME}"
             }
         }
     }
